@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galria de pokemon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="letra"><h3>
+        Web simple (sin imágenes) — Buscador de Digimon por nombre o
+        nivel; renderizar en table
+    </h3></div>
+
+    <!--DIGIMON-->
+    <div class="dig">
+        <h2>BUSCADOR DE DIGIMON</h2>
+        <select id="tipobusqueda">
+            <option value="all">Todos</option>
+            <option value="name">Por Nombre</option>
+            <option value="level">Por nivel</option>
+        </select>
+        <input type="text" id="valorbusqueda" placeholder="Ej: Agumon o Rookie">
+        <button onclick="buscarDig()">Buscar</button>
+
+        <table id="tablaDigimon" class="tabladig">
+            <thead>
+                <tr><th>Nombre</th><th>Nivel</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    
+</body>
+</html>
